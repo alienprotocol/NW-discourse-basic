@@ -160,10 +160,20 @@ a {
   }
 }
 
+// topic name
+span.first {
+  font-family: GothamBold !important;
+}
+
 // category dropdown
 .select-kit.combo-box.category-drop .category-drop-header {
   font-size: 12px !important;
   text-transform: uppercase !important;
+}
+
+.select-kit-body {
+  font-size: 12px !important;
+  letter-spacing: .0625em !important;
 }
 
 // badge text
