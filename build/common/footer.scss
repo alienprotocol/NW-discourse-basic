@@ -1,0 +1,430 @@
+/* Nerdwallet footer styles */
+.nw-global-footer {
+  margin-top: 1.75rem;
+  /* reset some discourse styles */
+  /**
+   * BELOW STYLES ALL COPIED FROM
+   * @nerdwallet/global-nav/dist/components/footer/footer.module.less
+   * `composes` syntax has been changed to direct references. No other changes.
+   */
+  /**
+   * Footer link
+   */
+  /**
+   * Footer container
+   */
+  /**
+   * Main nav
+   */
+  /**
+   * Copyright
+   */
+  /**
+   * Policy Container
+   *
+   * N logo - "Rights reserved" text - Terms of Use and Privacy Policy
+   */
+  /**
+   * Disclaimer
+   */
+}
+@media (min-width: 27.5rem) {
+  .nw-global-footer {
+    margin-top: calc(1.75rem + 0.25 * (100vw - 27.5rem) / 54.5);
+  }
+}
+@media (min-width: 82rem) {
+  .nw-global-footer {
+    margin-top: 2rem;
+  }
+}
+.nw-global-footer .message {
+  border-width: 0;
+  background-color: transparent;
+  padding: 0;
+}
+.nw-global-footer .link {
+  touch-action: manipulation;
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+.nw-global-footer .link:focus {
+  outline: 4px solid rgba(157, 205, 250, 0.5);
+}
+.nw-global-footer .link,
+.nw-global-footer .link:link,
+.nw-global-footer .link:link:visited,
+.nw-global-footer .link:visited {
+  color: white;
+}
+.nw-global-footer .link:hover,
+.nw-global-footer .link:link:hover {
+  text-decoration: none;
+  color: #008255;
+}
+.nw-global-footer .footer {
+  background-color: #464646;
+  padding: 1.75rem;
+  font-family: Gotham, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.846;
+  color: #D2D7DC;
+}
+@media (min-width: 27.5rem) {
+  .nw-global-footer .footer {
+    padding: calc(1.75rem + 0.25 * (100vw - 27.5rem) / 54.5);
+  }
+}
+@media (min-width: 82rem) {
+  .nw-global-footer .footer {
+    padding: 2rem;
+  }
+}
+.nw-global-footer .innerContainer {
+  margin-left: auto;
+  margin-right: auto;
+  /* @TODO: Should this use PageContainer? */
+  max-width: 1050px;
+}
+.nw-global-footer .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+@media (min-width: 45rem) {
+  .nw-global-footer .row {
+    flex-flow: row;
+  }
+}
+.nw-global-footer .nav {
+  display: flex;
+  margin-bottom: 0.5rem;
+  flex-flow: row wrap;
+}
+@media (min-width: 45rem) {
+  .nw-global-footer .nav {
+    margin-bottom: 0;
+  }
+}
+.nw-global-footer .navLink {
+  margin-bottom: 0.5rem;
+  touch-action: manipulation;
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+.nw-global-footer .navLink:focus {
+  outline: 4px solid rgba(157, 205, 250, 0.5);
+}
+.nw-global-footer .navLink,
+.nw-global-footer .navLink:link,
+.nw-global-footer .navLink:link:visited,
+.nw-global-footer .navLink:visited {
+  color: white;
+}
+.nw-global-footer .navLink:hover,
+.nw-global-footer .navLink:link:hover {
+  text-decoration: none;
+  color: #008255;
+}
+.nw-global-footer .column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  min-width: 120px;
+}
+.nw-global-footer .rightContainer {
+  align-items: flex-end;
+}
+@media (min-width: 45rem) {
+  .nw-global-footer .rightContainer {
+    display: flex;
+  }
+}
+@media (min-width: 45rem) {
+  .nw-global-footer .rightContainer {
+    flex-direction: column;
+  }
+}
+.nw-global-footer .message {
+  margin-bottom: 1rem;
+}
+@media (min-width: 45rem) {
+  .nw-global-footer .message {
+    text-align: right;
+  }
+}
+@media breakpoint-wide {
+  .nw-global-footer .message {
+    max-width: 400px;
+  }
+}
+.nw-global-footer .socialIconsContainer {
+  margin-bottom: 1rem;
+}
+@media (min-width: 45rem) {
+  .nw-global-footer .socialIconsContainer {
+    text-align: right;
+  }
+}
+.nw-global-footer .socialIcon {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+.nw-global-footer .socialIcon:first-child {
+  margin-left: 0;
+}
+.nw-global-footer .socialIcon a {
+  display: inline-block;
+  background-color: #747679;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+.nw-global-footer .socialIcon a::before {
+  content: "";
+  display: block;
+  overflow: hidden;
+  width: 21px;
+  height: 100%;
+  margin: 0 auto;
+  background: transparent url(//cdn.nerdwallet.com/img/icons/global-footer/Footer_Social_Icons.svg) no-repeat 0 center;
+  background-size: 300% auto;
+  background-position-x: 0%;
+  background-position-y: 50%;
+}
+.nw-global-footer .socialIconTwitter {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+.nw-global-footer .socialIconTwitter:first-child {
+  margin-left: 0;
+}
+.nw-global-footer .socialIconTwitter a {
+  display: inline-block;
+  background-color: #747679;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+.nw-global-footer .socialIconTwitter a::before {
+  content: "";
+  display: block;
+  overflow: hidden;
+  width: 21px;
+  height: 100%;
+  margin: 0 auto;
+  background: transparent url(//cdn.nerdwallet.com/img/icons/global-footer/Footer_Social_Icons.svg) no-repeat 0 center;
+  background-size: 300% auto;
+  background-position-x: 0%;
+  background-position-y: 50%;
+}
+.nw-global-footer .socialIconTwitter a:hover {
+  background-color: #00aced;
+}
+.nw-global-footer .socialIconFacebook {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+.nw-global-footer .socialIconFacebook:first-child {
+  margin-left: 0;
+}
+.nw-global-footer .socialIconFacebook a {
+  display: inline-block;
+  background-color: #747679;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+.nw-global-footer .socialIconFacebook a::before {
+  content: "";
+  display: block;
+  overflow: hidden;
+  width: 21px;
+  height: 100%;
+  margin: 0 auto;
+  background: transparent url(//cdn.nerdwallet.com/img/icons/global-footer/Footer_Social_Icons.svg) no-repeat 0 center;
+  background-size: 300% auto;
+  background-position-x: 0%;
+  background-position-y: 50%;
+}
+.nw-global-footer .socialIconFacebook a::before {
+  background-position: -21px center;
+  background-position-x: 50%;
+}
+.nw-global-footer .socialIconFacebook a:hover {
+  background-color: #3b5998;
+}
+.nw-global-footer .socialIconInstagram {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+.nw-global-footer .socialIconInstagram:first-child {
+  margin-left: 0;
+}
+.nw-global-footer .socialIconInstagram a {
+  display: inline-block;
+  background-color: #747679;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+.nw-global-footer .socialIconInstagram a::before {
+  content: "";
+  display: block;
+  overflow: hidden;
+  width: 21px;
+  height: 100%;
+  margin: 0 auto;
+  background: transparent url(//cdn.nerdwallet.com/img/icons/global-footer/Footer_Social_Icons.svg) no-repeat 0 center;
+  background-size: 300% auto;
+  background-position-x: 0%;
+  background-position-y: 50%;
+}
+.nw-global-footer .socialIconInstagram a::before {
+  background-position: -42px center;
+  background-position-x: 100%;
+}
+.nw-global-footer .socialIconInstagram a:hover {
+  background-color: #517fa4;
+}
+@media (min-width: 45rem) {
+  .nw-global-footer .appLinkContainer {
+    text-align: right;
+  }
+}
+@media breakpoint-wide {
+  .nw-global-footer .appLinkContainer {
+    white-space: nowrap;
+  }
+}
+.nw-global-footer .appLink {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+.nw-global-footer .appLink:last-child {
+  margin-right: 0;
+}
+.nw-global-footer .appLink a {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+.nw-global-footer .appLinkAppleStore {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+.nw-global-footer .appLinkAppleStore:last-child {
+  margin-right: 0;
+}
+.nw-global-footer .appLinkAppleStore a {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+.nw-global-footer .appLinkAppleStore a {
+  background: url(//cdn.nerdwallet.com/img/icons/global-footer/Download_on_the_App_Store_Badge_US-UK_135x40.svg);
+  background-size: 100%;
+}
+.nw-global-footer .appLinkGooglePlay {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+.nw-global-footer .appLinkGooglePlay:last-child {
+  margin-right: 0;
+}
+.nw-global-footer .appLinkGooglePlay a {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+.nw-global-footer .appLinkGooglePlay a {
+  background: url(https://play.google.com/intl/en_us/badges/images/badge_new.png);
+  background-size: 100%;
+}
+.nw-global-footer .copyrightImage {
+  width: 30px;
+  height: 30px;
+}
+.nw-global-footer .copyRightText {
+  color: #94A2A8;
+  margin-left: 0.25rem;
+}
+.nw-global-footer .policyContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.nw-global-footer .policyRightsContainer {
+  margin-right: 1rem;
+}
+.nw-global-footer .policyNavContainer {
+  text-align: right;
+}
+.nw-global-footer .policyLink {
+  display: inline-block;
+  touch-action: manipulation;
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+.nw-global-footer .policyLink:focus {
+  outline: 4px solid rgba(157, 205, 250, 0.5);
+}
+.nw-global-footer .policyLink,
+.nw-global-footer .policyLink:link,
+.nw-global-footer .policyLink:link:visited,
+.nw-global-footer .policyLink:visited {
+  color: white;
+}
+.nw-global-footer .policyLink:hover,
+.nw-global-footer .policyLink:link:hover {
+  text-decoration: none;
+  color: #008255;
+}
+.nw-global-footer .policyLink {
+  margin-right: 0.5rem;
+}
+.nw-global-footer .policyLink:last-child {
+  margin-right: 0;
+}
+.nw-global-footer .disclaimer {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-color: #94A2A8;
+  padding-top: 1rem;
+  font-size: 11px;
+  line-height: 14px;
+}
+.nw-global-footer .disclaimer :global(.title) {
+  font-weight: 500;
+}

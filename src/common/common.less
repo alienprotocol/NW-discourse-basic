@@ -1,0 +1,263 @@
+// fonts
+@font-face {
+  font-family: GothamBook;
+  src: url("https://www.nerdwallet.com/cdn/fonts/8bf5c6a9c5.Gotham-Book--critical.woff2") format('woff2')
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url("https://www.nerdwallet.com/cdn/fonts/be878a9eea.Gotham-Bold--critical.woff2") format('woff2')
+}
+
+// typography
+body {
+  font-family: GothamBook;
+  font-size: @font-size-body;
+  .background-neutral-lightest() !important;
+}
+
+h1, h2, h3, h4 {
+  font-family: GothamBold;
+  font-weight: 800;
+}
+
+h3 {
+  color: ~"$primary" !important;
+}
+
+p {
+  .text-default() !important;
+}
+
+// links
+a {
+  .color-blue();
+
+  &:visited {
+    .color-blue();
+  }
+
+  &:hover {
+    .color-blue();
+    .underline();
+  }
+
+  &:active {
+    .color-blue();
+  }
+}
+
+// header
+.d-header {
+  .border-inset-0() !important;
+  .border-bottom-1() !important;
+  .border-neutral-lighter() !important;
+
+  .title {
+    margin-top: 5px !important;
+  }
+  #site-logo {
+    height: 30px;
+  }
+}
+
+// base btn + btn danger
+.btn, .btn-danger {
+  font-size: @font-size-small !important;
+  .uppercase() !important;
+}
+
+// btn primary
+.btn-primary {
+  font-size: @font-size-small !important;
+  background: ~"$quaternary" !important;
+  .uppercase() !important;
+
+  &:hover, &.btn-hover {
+    .background-green-light() !important;
+  }
+}
+
+.btn-flat {
+  font-size: @font-size-small !important;
+  .uppercase() !important;
+}
+
+// alert - alert info
+.alert.alert-info {
+  .background-blue-lightest() !important;
+}
+
+// full width container
+.full-width {
+  .background-white() !important;
+  padding: 12px !important;
+  margin-bottom: 20px !important;
+}
+
+// nav pills
+.nav-pills {
+  > li {
+
+    > a {
+      font-size: @font-size-small !important;
+      .uppercase() !important;
+
+      &:hover {
+        color: ~"$secondary" !important;
+        .background-green-light() !important;
+      }
+    }
+  }
+}
+
+// admin dashboard
+.admin-contents table td {
+  .border-bottom-1() !important;
+  .border-top-1() !important;
+  .border-neutral-lighter() !important;
+}
+
+.admin-contents {
+  .margin-horizontal-0() !important;
+}
+
+.dashboard-stats table th {
+  .background-neutral-lightest() !important;
+}
+
+// admin controls
+.admin-controls {
+  .background-white() !important;
+}
+
+.admin-controls .nav.nav-pills li.active a {
+  border-color: ~"$quaternary" !important;
+  background-color: ~"$quaternary" !important;
+}
+
+// admin nav-stacked
+.nav-stacked {
+  .background-neutral-lightest() !important;
+
+  li {
+    .border-bottom-1() !important;
+    .border-neutral-lightest() !important;
+  }
+}
+
+// content list box
+.content-list {
+  ul {
+    li {
+      .border-bottom-1() !important;
+      .border-neutral-lighter() !important;
+
+      &:first-of-type {
+        .border-top-1() !important;
+        .border-neutral-lighter() !important;
+      }
+
+      a:hover {
+        .background-neutral-lightest() !important;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// topic name
+span.first {
+  font-family: GothamBold;
+}
+
+// topic time gap
+.small-action {
+  .border-top-0() !important;
+}
+
+// category dropdown
+.select-kit.combo-box.category-drop .category-drop-header {
+  font-size: @font-size-small !important;
+  .uppercase() !important;
+}
+
+.select-kit-body {
+  font-size: @font-size-small !important;
+  letter-spacing: .0625em !important;
+}
+
+.select-kit.dropdown-select-box .select-kit-row .texts .desc {
+  text-transform: none !important;
+  font-size: @font-size-small !important;
+  letter-spacing: normal !important;
+}
+
+.select-kit .category-row .category-desc {
+  text-transform: none !important;
+}
+
+// badge text
+.badge-wrapper {
+  font-size: @font-size-small !important;
+}
+
+// override link text-decoration: drop down menu
+.menu-panel ul.menu-links li a:hover, .menu-panel ul li.heading a:hover {
+  text-decoration: none !important;
+}
+
+// override link text-decoration: message controls box
+.map a:hover {
+  text-decoration: none !important;
+}
+
+// topic footer text
+#topic-footer-buttons .topic-notifications-button .reason, #topic-footer-buttons .pinned-button .reason {
+  line-height: 1.2 !important;
+  font-size: @font-size-small !important;
+}
+
+// topic select kit + dropdown
+.select-kit.combo-box .select-kit-header {
+  font-size: @font-size-small !important;
+  .uppercase() !important;
+}
+
+.select-kit .select-kit-collection {
+  .uppercase() !important;
+}
+
+// submit panel
+.submit-panel {
+  font-size: @font-size-small !important;
+  .uppercase() !important;
+
+}
+
+// topic progress slider
+.timeline-container .topic-timeline .timeline-scrollarea {
+  .border-green() !important;
+}
+
+.timeline-container .topic-timeline .timeline-handle {
+  .background-green() !important;
+}
+
+@media all
+and (max-width : 775px) {
+
+  .topic-body {
+      width: calc(100% - 55px) !important;
+    }
+
+  .embedded-posts {
+    &.top {
+      width: calc(100% - 64px) !important;
+    }
+  }
+}
+
+/* Header and footer styles */
+@import './header.less';
+@import './footer.less';

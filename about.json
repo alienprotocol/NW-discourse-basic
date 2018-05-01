@@ -1,9 +1,0 @@
-{
-   "name": "NW-discourse-basic",
-   "about_url": "https://github.com/alienprotocol/NW-discourse-basic",
-   "license_url": "https://github.com/alienprotocol/NW-discourse-basic/blob/master/LICENSE.txt",
-   "assets": {
-        "gothambook": "assets/GothamBook.woff2",
-        "gothambold": "assets/GothamBold.woff2"
-   }
-}
