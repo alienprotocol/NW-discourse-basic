@@ -1,0 +1,19 @@
+{
+   "name": "NW-discourse-theme",
+   "about_url": "https://github.com/NerdWallet/discourse-theme-build",
+   "license_url": "",
+   "color_schemes": {
+     "NW-discourse-theme": {
+       "primary": "000000",
+       "secondary": "ffffff",
+       "tertiary": "005fb9",
+       "quaternary": "008255",
+       "header background": "ffffff",
+       "header primary": "000000",
+       "highlight": "fff8e8",
+       "danger": "de2828",
+       "success": "40ad87",
+       "love": "de2828"
+     }
+   }
+}

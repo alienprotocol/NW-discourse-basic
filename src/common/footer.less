@@ -1,0 +1,290 @@
+@import "npm://@nerdwallet/base-styles/styles.less";
+
+/* Nerdwallet footer styles */
+.nw-global-footer {
+  .margin-top-4();
+
+  /* reset some discourse styles */
+  .message {
+    .border-all-0;
+    .background-transparent;
+    .padding-all-0;
+  }
+
+  /**
+   * BELOW STYLES ALL COPIED FROM
+   * @nerdwallet/global-nav/dist/components/footer/footer.module.less
+   * `composes` syntax has been changed to direct references. No other changes.
+   */
+
+  /**
+   * Footer link
+   */
+
+  .link {
+    .focus-ring;
+    .touch-action-manipulation;
+    text-decoration: none;
+    transition: color 0.1s ease;
+
+    &, &:link, &:link:visited, &:visited {
+      color: white;
+    }
+
+    &:hover, &:link:hover {
+      text-decoration: none;
+      color: @green;
+    }
+  }
+
+  /**
+   * Footer container
+   */
+
+  .footer {
+    // hotfix due to global nav color regression for base styles update:
+    background-color: #464646;
+    .padding-all-4;
+    .text-small;
+    .color-neutral-lighter;
+  }
+
+  .innerContainer {
+    .margin-horizontal-auto;
+    /* @TODO: Should this use PageContainer? */
+    max-width: 1050px;
+  }
+
+  .row {
+    .display-flex;
+    .flex-direction-column;
+    .justify-content-space-between;
+    .margin-bottom-3;
+
+    @media @breakpoint-wide {
+      flex-flow: row;
+    }
+  }
+
+  /**
+   * Main nav
+   */
+
+  .nav {
+    .display-flex;
+    .margin-bottom-2;
+    .margin-bottom-0--wide;
+    flex-flow: row wrap;
+  }
+
+  .navLink {
+    .margin-bottom-2;
+    .link;
+  }
+
+  .column {
+    .display-flex;
+    .flex-direction-column;
+    .margin-right-3;
+    min-width: 120px;
+  }
+
+  .rightContainer {
+    .display-flex--wide;
+    .flex-direction-column--wide;
+    .align-items-flex-end;
+  }
+
+  .message {
+    .margin-bottom-3;
+    .text-align-right--wide;
+
+    @media breakpoint-wide {
+      max-width: 400px;
+    }
+  }
+
+  .socialIconsContainer {
+    .text-align-right--wide;
+    .margin-bottom-3;
+  }
+
+  .socialIcon {
+    .display-inline-block;
+    .margin-left-3;
+    .vertical-align-top;
+    font-size: 0;
+    line-height: 0;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    & a {
+      display: inline-block;
+      background-color: #747679;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+
+      &::before {
+        content: "";
+        display: block;
+        overflow: hidden;
+        width: 21px;
+        height: 100%;
+        margin: 0 auto;
+        background: transparent url(//cdn.nerdwallet.com/img/icons/global-footer/Footer_Social_Icons.svg) no-repeat 0 center;
+        background-size: 300% auto;
+        background-position-x: 0%;
+        background-position-y: 50%;
+      }
+    }
+  }
+
+  .socialIconTwitter {
+    .socialIcon;
+
+    & a:hover {
+      background-color: #00aced;
+    }
+  }
+
+  .socialIconFacebook {
+    .socialIcon;
+
+    & a {
+      &::before {
+        background-position: -21px center;
+        background-position-x: 50%;
+      }
+      &:hover {
+        background-color: #3b5998;
+      }
+    }
+  }
+
+  .socialIconInstagram {
+    .socialIcon;
+
+    & a {
+      &::before {
+        background-position: -42px center;
+        background-position-x: 100%;
+      }
+      &:hover {
+        background-color: #517fa4;
+      }
+    }
+  }
+
+  .appLinkContainer {
+    .text-align-right--wide;
+
+    @media breakpoint-wide {
+      white-space: nowrap;
+    }
+  }
+
+  .appLink {
+    .display-inline-block;
+    .margin-right-3;
+    .vertical-align-top;
+    font-size: 0;
+    line-height: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a {
+      display: inline-block;
+      width: 135px;
+      height: 40px;
+      background-repeat: no-repeat;
+      border-radius: 4px;
+    }
+  }
+
+  .appLinkAppleStore {
+    .appLink;
+
+    & a {
+      background: url(//cdn.nerdwallet.com/img/icons/global-footer/Download_on_the_App_Store_Badge_US-UK_135x40.svg);
+      background-size: 100%;
+    }
+  }
+
+  .appLinkGooglePlay {
+    .appLink;
+
+    & a {
+      background: url(https://play.google.com/intl/en_us/badges/images/badge_new.png);
+      background-size: 100%;
+    }
+  }
+
+  /**
+   * Copyright
+   */
+
+  .copyrightImage {
+    width: 30px;
+    height: 30px;
+  }
+
+  .copyRightText {
+    .color-neutral-dark;
+    .margin-left-1;
+  }
+
+  /**
+   * Policy Container
+   *
+   * N logo - "Rights reserved" text - Terms of Use and Privacy Policy
+   */
+
+  .policyContainer {
+    .display-flex;
+    .justify-content-space-between;
+    .align-items-flex-end;
+    .margin-bottom-3;
+    .flex-wrap;
+  }
+
+  .policyRightsContainer {
+    .margin-right-3;
+  }
+
+  .policyNavContainer {
+    .text-align-right;
+  }
+
+  .policyLink {
+    .display-inline-block;
+    .link;
+  }
+
+  .policyLink {
+    .margin-right-2;
+  }
+
+  .policyLink:last-child {
+    margin-right: 0;
+  }
+
+  /**
+   * Disclaimer
+   */
+  .disclaimer {
+    .border-top-1;
+    .border-neutral-dark;
+    .padding-top-3;
+    font-size: 11px;
+    line-height: 14px;
+
+    & :global(.title) {
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "discourse-theme",
+  "version": "1.1.0",
+  "description": "NerdWallet themed theme for discouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf build && cp -r src build && bash scripts/build-less.sh",
+    "deploy": "gh-pages -d build --branch master --repo git@github.com:NerdWallet/discourse-theme-build.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NerdWallet/discourse-theme.git"
+  },
+  "author": "bvillanueva",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/NerdWallet/discourse-theme/issues"
+  },
+  "homepage": "https://github.com/NerdWallet/discourse-theme#readme",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  },
+  "dependencies": {
+    "@nerdwallet/base-styles": "^2.15.2",
+    "less": "^3.0.1",
+    "less-plugin-npm-import": "^2.1.0"
+  }
+}

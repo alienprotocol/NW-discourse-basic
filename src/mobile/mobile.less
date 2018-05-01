@@ -1,0 +1,112 @@
+@import "npm://@nerdwallet/base-styles/styles";
+
+// topic list
+.topic-list th, .topic-list td {
+  padding: 7px 7px !important;
+}
+
+.topic-list td {
+  .background-white() !important;
+}
+
+// topic post overrides
+.topic-post {
+  padding: 12px !important;
+  .background-white() !important;
+  border-radius: 4px !important;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.07) !important;
+  margin-bottom: 16px;
+}
+
+.topic-post article {
+  .border-top-1() !important;
+  .border-transparent() !important;
+}
+
+.topic-meta-data {
+  font-size: @font-size-small !important;
+}
+
+.topic-status-info {
+  .border-top-1() !important;
+  .border-neutral-lighter() !important;
+}
+
+.topic-list>tbody>tr:first-of-type {
+  .border-top-1() !important;
+  .border-neutral-lighter() !important;
+}
+
+.topic-list>tbody>tr {
+  .border-bottom-1() !important;
+  .border-neutral-lighter() !important;
+}
+
+.topic-list-main-link, .topic-list .main-link {
+  font-size: @font-size-body !important;
+}
+
+.topic-list .posts-map {
+  font-size: @font-size-body !important;
+}
+
+// topic progress bar
+#topic-progress {
+  .border-right-1() !important;
+  .border-green-light() !important;
+  .background-green-light() !important;
+  .color-white() !important;
+}
+
+#topic-progress .bg {
+  .border-right-1() !important;
+  border-color: @green !important;
+  .background-green() !important;
+}
+
+// suggested topics
+#suggested-topics {
+  margin-bottom: 20px !important;
+  padding: 20px 12px 15px 12px !important;
+  .background-white() !important;
+  border-radius: 4px !important;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.07) !important;
+}
+
+// user profile
+.user-main .about.collapsed-info .details, .user-main .about {
+  .background-transparent() !important;
+}
+
+.mobile-view .mobile-nav {
+  font-size: @font-size-small !important;
+  .uppercase() !important;
+  line-height: 1.2 !important;
+}
+
+.mobile-view .mobile-nav {
+  &.messages-nav,
+  &.notifications-nav,
+  &.activity-nav,
+  &.preferences-nav {
+    top: -50px !important;
+  }
+}
+
+.user-main .about .details {
+  .background-transparent() ;
+}
+
+.user-main .about .secondary {
+  font-size: @font-size-small !important;
+  line-height: 1.2 !important;
+  letter-spacing: .0625em !important;
+}
+
+.user-stream .item, .user-stream .user-stream-item {
+  padding: 20px 12px 15px 12px !important;
+}
+
+.user-right {
+  margin: 10px 0 20px 0 !important;
+}
