@@ -1,6 +1,8 @@
 .nw-custom-header {
   background-color: #F5F6F7;
-  text-align: center;
+  text-align: right;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 .nw-custom-header__text {
   color: #8ccb32 !important;
@@ -8,7 +10,7 @@
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.846;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  font-weight: 600 !important;
+}
+.d-header #site-logo {
+  max-width: 168px !important;
 }
