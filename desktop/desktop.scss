@@ -1,27 +1,27 @@
-.list-container {
+.st-container {
   background-color: #ffffff !important;
 }
 .topic-post {
   margin-bottom: 16px !important;
 }
-.topic-list > tbody > tr:first-of-type {
+.topic-st > tbody > tr:first-of-type {
   border-top-style: solid !important;
   border-top-width: 1px !important;
   border-color: #D2D7DC !important;
 }
-.topic-list > tbody > tr {
+.topic-st > tbody > tr {
   border-bottom-style: solid !important;
   border-bottom-width: 1px !important;
   border-color: #D2D7DC !important;
 }
-.topic-list td {
+.topic-st td {
   background-color: #ffffff !important;
 }
-.topic-list-main-link,
-.topic-list .main-link {
+.topic-st-main-nk,
+.topic-st .main-nk {
   font-size: 1rem !important;
 }
-.topic-list .posts-map {
+.topic-st .posts-map {
   font-size: 1rem !important;
 }
 .topic-status-info {
@@ -86,12 +86,12 @@
 .open .grippie {
   background-color: #008255 !important;
 }
-.category-list tbody tr:first-of-type {
+.category-st tbody tr:first-of-type {
   border-top-style: solid !important;
   border-top-width: 1px !important;
   border-color: #D2D7DC !important;
 }
-.category-list tbody tr {
+.category-st tbody tr {
   border-top-style: solid !important;
   border-top-width: 1px !important;
   border-color: #D2D7DC !important;
@@ -101,7 +101,7 @@
   border-bottom-width: 1px !important;
   border-color: #D2D7DC !important;
 }
-.latest-topic-list-item {
+.latest-topic-st-item {
   border-bottom-style: solid !important;
   border-bottom-width: 1px !important;
   border-color: #D2D7DC !important;
@@ -113,6 +113,20 @@
   border-radius: 4px !important;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.07) !important;
 }
+.user-main .about .details {
+  background-color: transparent !important;
+}
+.user-main .about .secondary {
+  background-color: transparent !important;
+}
 .user-main .about.collapsed-info .details {
   background-color: transparent !important;
+}
+#user-card.show-badges .badge-section {
+  font-family: Gotham, system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.846;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
 }

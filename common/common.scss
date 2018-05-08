@@ -119,6 +119,11 @@ a:active {
   border-bottom-width: 1px !important;
   border-color: #F5F6F7 !important;
 }
+.list-controls .dropdown-header {
+  font-size: 0.8125rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.0625em !important;
+}
 .content-list ul li {
   border-bottom-style: solid !important;
   border-bottom-width: 1px !important;
@@ -158,6 +163,9 @@ span.first {
 }
 .badge-wrapper {
   font-size: 0.8125rem !important;
+}
+.badge-wrapper a:hover {
+  text-decoration: none !important;
 }
 .menu-panel ul.menu-links li a:hover,
 .menu-panel ul li.heading a:hover {
@@ -212,10 +220,13 @@ span.first {
   color: #8ccb32 !important;
 }
 .nw-custom-header__text {
-  color: #8ccb32 !important;
+  color: #008255 !important;
 }
 .d-header #site-logo {
   max-width: 168px !important;
+}
+.top-date-string {
+  color: #8ccb32 !important;
 }
 /* Nerdwallet footer styles */
 .nw-global-footer {
