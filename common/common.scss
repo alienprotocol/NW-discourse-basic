@@ -124,6 +124,9 @@ a:active {
   text-transform: uppercase !important;
   letter-spacing: 0.0625em !important;
 }
+.topic-list > tbody > tr:first-of-type {
+  border-width: 1px !important;
+}
 .content-list ul li {
   border-bottom-style: solid !important;
   border-bottom-width: 1px !important;
