@@ -47,7 +47,7 @@ a:active {
   border-color: #D2D7DC !important;
 }
 .d-header .title {
-  margin-top: 5px !important;
+  margin-top: 6px !important;
 }
 .d-header #site-logo {
   height: 30px;
@@ -204,11 +204,14 @@ span.first {
 }
 @media all and (max-width: 775px) {
   .topic-body {
-    width: calc(100% - 55px) !important;
+    width: calc(100% - 59px) !important;
   }
   .embedded-posts.top {
-    width: calc(100% - 64px) !important;
+    width: calc(100% - 68px) !important;
   }
+}
+#reply-control {
+  background-color: #008255 !important;
 }
 /* Header and footer styles */
 .nw-custom-header {
@@ -225,8 +228,12 @@ span.first {
 .nw-custom-header__text {
   color: #008255 !important;
 }
+.nw-custom-header a:link {
+  color: #008255 !important;
+}
 .d-header #site-logo {
   max-width: 168px !important;
+  height: 25px !important;
 }
 .top-date-string {
   color: #8ccb32 !important;

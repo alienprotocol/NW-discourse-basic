@@ -12,8 +12,12 @@
 .nw-custom-header__text {
   color: #008255 !important;
 }
+.nw-custom-header a:link {
+  color: #008255 !important;
+}
 .d-header #site-logo {
   max-width: 168px !important;
+  height: 25px !important;
 }
 .top-date-string {
   color: #8ccb32 !important;
