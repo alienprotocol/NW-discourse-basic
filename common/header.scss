@@ -1,19 +1,27 @@
 .nw-custom-header {
   background-color: #F5F6F7;
-  text-align: right;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+}
+.nw-custom-header__text {
+  color: #008255 !important;
   font-family: Gotham, system-ui, sans-serif;
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.846;
+  text-align: right;
+}
+.nw-custom-header__text a:link {
   color: #8ccb32 !important;
 }
-.nw-custom-header__text {
-  color: #008255 !important;
+.nw-custom-header__text a:visited {
+  color: #8ccb32 !important;
 }
-.nw-custom-header a:link {
-  color: #008255 !important;
+.nw-custom-header__text a:active {
+  color: #8ccb32 !important;
+}
+.nw-custom-header__text a:hover {
+  color: #8ccb32 !important;
 }
 .d-header #site-logo {
   max-width: 168px !important;
